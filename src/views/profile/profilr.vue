@@ -1,11 +1,134 @@
 <template>
     <div>
-        个人页
+        <scroll class="content">
+            <ul>
+                <li>分类列表</li>
+                <li>分类列表</li>
+                <li>分类列表</li>
+                <li>分类列表</li>
+                <li>分类列表</li>
+                <li>分类列表</li>
+                <li>分类列表</li>
+                <li>分类列表</li>
+                <li>分类列表</li>
+                <li>分类列表</li>
+                <li>分类列表</li>
+                <li>分类列表</li>
+                <li>分类列表</li>
+                <li>分类列表</li>
+                <li>分类列表</li>
+                <li>分类列表</li>
+                <li>分类列表</li>
+                <li>分类列表</li>
+                <li>分类列表</li>
+                <li>分类列表</li>
+                <li>分类列表</li>
+                <li>分类列表</li>
+                <li>分类列表</li>
+                <li>分类列表</li>
+                <li>分类列表</li>
+                <li>分类列表</li>
+                <li>分类列表</li>
+                <li>分类列表</li>
+                <li>分类列表</li>
+                <li>分类列表</li>
+                <li>分类列表</li>
+                <li>分类列表</li>
+                <li>分类列表</li>
+                <li>分类列表</li>
+                <li>分类列表</li>
+                <li>分类列表</li>
+                <li>分类列表</li>
+                <li>分类列表</li>
+                <li>分类列表</li>
+                <li>分类列表</li>
+                <li>分类列表</li>
+                <li>分类列表</li>
+                <li>分类列表</li>
+                <li>分类列表</li>
+                <li>分类列表</li>
+                <li>分类列表</li>
+                <li>分类列表</li>
+                <li>分类列表</li>
+                <li>分类列表</li>
+                <li>分类列表</li>
+                <li>分类列表</li>
+                <li>分类列表</li>
+                <li>分类列表</li>
+                <li>分类列表</li>
+                <li>分类列表</li>
+                <li>分类列表</li>
+                <li>分类列表</li>
+                <li>分类列表</li>
+                <li>分类列表</li>
+                <li>分类列表</li>
+                <li>分类列表</li>
+                <li>分类列表</li>
+                <li>分类列表</li>
+                <li>分类列表</li>
+                <li>分类列表</li>
+                <li>分类列表</li>
+                <li>分类列表</li>
+                <li>分类列表</li>
+                <li>分类列表</li>
+                <li>分类列表</li>
+                <li>分类列表</li>
+                <li>分类列表</li>
+                <li>分类列表</li>
+                <li>分类列表</li>
+                <li>分类列表</li>
+                <li>分类列表</li>
+                <li>分类列表</li>
+                <li>分类列表</li>
+                <li>分类列表</li>
+                <li>分类列表</li>
+                <li>分类列表</li>
+                <li>分类列表</li>
+                <li>分类列表</li>
+                <li>分类列表</li>
+                <li>分类列表</li>
+                <li>分类列表</li>
+                <li>分类列表</li>
+                <li>分类列表</li>
+                <li>分类列表</li>
+                <li>分类列表</li>
+                <li>分类列表</li>
+                <li>分类列表</li>
+                <li>分类列表</li>
+                <li>分类列表</li>
+                <li>分类列表</li>
+                <li>分类列表</li>
+                <li>分类列表</li>
+                <li>分类列表</li>
+                <li>分类列表</li>
+                <li>分类列表</li>
+                <li>分类列表</li>
+                <li>分类列表</li>
+                <li>分类列表</li>
+                <li>分类列表</li>
+                <li>分类列表</li>
+                <li>分类列表</li>
+                <li>分类列表</li>
+                <li>分类列表</li>
+            </ul>
+        </scroll>
     </div>
 </template>
 
 <script>
+import Scroll from 'components/common/scroll/Scroll.vue'
 export default {
-    name:'profile'
+    name:'profile',
+    components:{
+        Scroll
+    }
 }
 </script>
+
+<style scoped>
+.content{
+    height: 300px;
+    background-color: red;
+    overflow: hidden;
+}
+</style>
