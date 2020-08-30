@@ -1,7 +1,7 @@
 <template>
     <div class="wapper" ref="aaaaa">
         <ul class="content">
-            <botton>按钮</botton>
+            <!-- <botton>按钮</botton> -->
             <li>分类列表</li>
             <li>分类列表</li>
             <li>分类列表</li>
@@ -131,8 +131,8 @@ export default {
         // })
     },
     mounted(){
-        console.log(this.$refs.aaaaa)
-        console.log(document.querySelector('.wapper'))
+        // console.log(this.$refs.aaaaa)
+        // console.log(document.querySelector('.wapper'))
         // this.scroll =new BScroll('.wapper',{
 
         //  })
@@ -145,7 +145,7 @@ export default {
             //  console.log(position)
          })
         this.scroll.on('pullingUp',() => {
-             console.log('上拉加载更多')
+            //  console.log('上拉加载更多')
          })
 
     }

@@ -40,23 +40,38 @@ export default {
             // console.log(position)
             this.$emit('scroll',position)
         })
+        console.log('1111111',this.scroll)
 
-        // 3 监听上拉事件
-        this.scroll.on('pullingUp',()=>{
-            // console.log('上拉加载更多')
+        // 刷新  解决上拉加载不完全的bug
+        // this.scroll.refresh()
+
+        // 3 监听上拉事件  监听滚动到底部
+        if(this.probeType ===2 || this.probeType ===3){
+            this.scroll.on('pullingUp',()=>{
+            console.log('监听滚动到底部')
             this.$emit('pullingUp')
         })
+        }
+        
 
         // this.scroll.scrollTo(x,y)
         
     },
     methods:{
         scrollTo(x,y,time=300){
-            this.scroll.scrollTo(x,y,time)
+            this.scroll &&  this.scroll.scrollTo(x,y,time)
         },
         finishPullUp(){
             this.scroll.finishPullUp()
-        }
+        },
+        refresh(){
+            
+             this.scroll && this.scroll.refresh()
+             console.log('-------')
+        },
+        getScrollY(){
+           return this.scroll ? this.scroll.y : 0
+        },
     }
 }
 </script>
